@@ -2,6 +2,13 @@
 A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily your REST API and communicate between your applications via HTTP Requests. ( Unity 2020.2.4f1 )
 Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
 
+## Features 
+- [x] REST API ( GET, POST, PUT, DELETE )
+- [] Html Webserver
+- [] Routes injection via reflection
+- [] Error handling via Exception StackTrace 
+- [] SSL-Certificate configuration ( TODO )
+
 ## Test
 Open Assets/TestScene. Run the scene. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
 
@@ -13,7 +20,10 @@ Your HttpListener webserver is running under urls defined in the [http-listener-
 
 So by default, the webserver is running in localhost on the port 4444. You can use this files to setup your development/production environment as you wish.
 
-## Code Example 
+## Import in any Unity version
+You can easily export the project as a package by rightclicking in the Unity editor on the UnityCustomHttpListener. Click on Export package. Select all files. Export package. Then you can import the UnityHttpListener in any Unity version.
+
+## Code Hello-World Example 
 ```cs
 using System.Collections.Generic;
 using System.IO;
@@ -45,9 +55,21 @@ using UnityEngine;
         }
 ```
 
-For more examples, check the [ExampleController](https://github.com/sachaamm/unity-http-listener/blob/main/Assets/UnityCustomHttpListener/Demo/Controller/ExampleController.cs) file.
+For more examples, check the [ExampleController](https://github.com/sachaamm/unity-http-listener/blob/main/Assets/UnityCustomHttpListener/Demo/Controller/ExampleController.cs) file. For more explanations, you can also go to Controllers and Routes section
 
-## Import in any Unity version
-You can easily export the project as a package by rightclicking in the Unity editor on the UnityCustomHttpListener. Click on Export package. Select all files. Export package. Then you can import the UnityHttpListener in any Unity version.
 
+
+## Controllers and Routes
+A controller is dispatching RestRoutes which can be HttpResponseTemplate or Task<HttpResponseTemplate>. A controller is labelled by the attrbute [MyApiController].
+A controller's route is labelled by the attribute [MyRestRoute]
+UnityHttpListener is injecting all controllers routes with [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) and this is why we use attributes to label routes and controllers.
+
+## TODO
+- 
+    
+## Fork me !
+You can fork the repo 
+    
+
+``````
 
