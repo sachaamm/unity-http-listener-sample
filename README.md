@@ -1,6 +1,6 @@
 # unity-http-listener
 A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily your REST API and communicate between your applications via HTTP Requests. ( Unity 2020.2.4f1 )
-Based on gist (https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
+Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
 
 ## Test
 Open Assets/TestScene. Run the scene. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
