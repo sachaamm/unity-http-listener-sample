@@ -1,5 +1,5 @@
 # unity-http-listener
-A custom **HTTP REST webserver middleware for Unity** ( without .NET ). Build easily your REST API and communicate between your applications via HTTP Requests. ( Unity 2020.2.4f1 )
+A custom **HTTP REST webserver middleware for Unity** ( without .NET ). Build easily your REST API and communicate between your applications via HTTP Requests. ( made in Unity 2020.2.4f1, check Import in any Unity version section )
 Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
 
 ## Features 
