@@ -4,10 +4,10 @@ Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb5
 
 ## Features 
 - [x] REST API ( GET, POST, PUT, DELETE )
-- [] Html Webserver
-- [] Routes injection via reflection
-- [] Error handling via Exception StackTrace 
-- [] SSL-Certificate configuration ( TODO )
+- [x] Html Webserver
+- [x] Routes injection via reflection
+- [x] Error handling via Exception StackTrace 
+- [ ] SSL-Certificate configuration ( TODO )
 
 ## Test
 Open Assets/TestScene. Run the scene. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
@@ -64,9 +64,6 @@ A controller is dispatching RestRoutes which can be HttpResponseTemplate or Task
 A controller's route is labelled by the attribute [MyRestRoute]
 UnityHttpListener is injecting all controllers routes with [reflection](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/reflection) and this is why we use attributes to label routes and controllers.
 
-## TODO
-- 
-    
 ## Fork me !
 You can fork the repo 
     
