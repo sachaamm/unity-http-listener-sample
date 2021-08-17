@@ -45,7 +45,7 @@ using UnityEngine;
         }
 ```
 
-For more examples, check the ExampleController file.
+For more examples, check the [ExampleController](https://github.com/sachaamm/unity-http-listener/blob/main/Assets/UnityCustomHttpListener/Demo/Controller/ExampleController.cs) file.
 
 ## Import in any Unity version
 You can easily export the project as a package by rightclicking in the Unity editor on the UnityCustomHttpListener. Click on Export package. Select all files. Export package. Then you can import the UnityHttpListener in any Unity version.
