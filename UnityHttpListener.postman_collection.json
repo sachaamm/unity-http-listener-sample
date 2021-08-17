@@ -1,0 +1,266 @@
+{
+	"info": {
+		"_postman_id": "882184eb-4644-4863-bfc1-5ada9c033325",
+		"name": "UnityHttpListener",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello World",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Hello World With QueryString Parameter",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22&name=Bob%20O%27Neill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"getPersonWithAgeAndNameInQueryParams",
+						""
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "22"
+						},
+						{
+							"key": "name",
+							"value": "Bob%20O%27Neill"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find Person With QueryString Parameters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22&name=Bob%20O%27Neill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"getPersonWithAgeAndNameInQueryParams",
+						""
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "22"
+						},
+						{
+							"key": "name",
+							"value": "Bob%20O%27Neill"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Error Handling",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22&name=Bob%20O%27Neill",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"getPersonWithAgeAndNameInQueryParams",
+						""
+					],
+					"query": [
+						{
+							"key": "age",
+							"value": "22"
+						},
+						{
+							"key": "name",
+							"value": "Bob%20O%27Neill"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/addPerson/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"addPerson",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Person Async",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4444/addPersonAsync/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"addPersonAsync",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
