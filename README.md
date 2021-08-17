@@ -3,8 +3,8 @@ A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily
 Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
 
 ## Features 
-- [x] REST API ( GET, POST, PUT, DELETE ) AND/OR  Html Webserver
-- [x] 3 Responses content types : text/plain, text/html, application/json
+- [x] REST API ( **GET**, **POST**, **PUT**, **DELETE** ) AND/OR  Html Webserver
+- [x] 3 Responses content types : **text/plain**, **text/html**, **application/json**
 - [x] URL not found handling
 - [x] Routes injection via reflection
 - [x] Error handling via Exception StackTrace 
@@ -13,7 +13,7 @@ Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb5
 ## Test
  - 1. Open Assets/TestScene. 
  - 2. Run the scene. 
- - 3. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
+ - 3. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser with @GET routes.
 
 ## Configure 
 Your HttpListener webserver is running under urls defined in the [http-listener-config file](https://github.com/sachaamm/unity-http-listener/blob/main/http-listener-config.json).
