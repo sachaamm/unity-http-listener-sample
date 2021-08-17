@@ -2,15 +2,19 @@
 A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily your REST API and communicate between your applications via HTTP Requests. ( Unity 2020.2.4f1 )
 
 
-
 ## Test
 Open Assets/TestScene. Run the scene. Open the postman collection in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
 
 ## Configure 
+Your HttpListener webserver is running under urls defined in the http-listener-config file.
+```json 
+{"urlBases":["http://localhost:4444","http://127.0.0.1:4444"]}
+```
 
+So by default, the webserver is running in localhost on the port 4444. You can use this files to setup your production environment.
 
 ## Code Example 
-````cs
+```cs
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,10 +33,10 @@ using UnityEngine;
         /// Hello world example
         /// </summary>
         /// Request : GET http://localhost:4444/
-        /// <param name="request"></param>
-        /// <returns></returns>
+        /// <param name="request">The HttpListenerRequest can contains parameters, such as QueryString parameters or objects contained in request.InputStream</param>
+        /// <returns>An http response template emitting the status code 200</returns>
         [MyRestRoute("/", HttpRestMethod.GET,HttpResponseUtility.HttpResponseContentType.Html)]
-        public HttpResponseTemplate HomeRoute(HttpListenerRequest request)
+        public HttpResponseTemplate HomeRoute(HttpListenerRequest request) // Important : The method needs to be public in order to be retrieved by reflection !!!
         {
             string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
             return HttpResponseUtility.Ok(responseString);
@@ -41,4 +45,9 @@ using UnityEngine;
         }
 ```
 
+For more examples, check the ExampleController file.
+
 ## Import in any Unity version
+You can easily export the project as a package by rightclicking in the Unity editor on the UnityCustomHttpListener. Click on Export package. Select all files. Export package. Then you can import the UnityHttpListener in any Unity version.
+
+
