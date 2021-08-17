@@ -43,11 +43,13 @@ using UnityEngine;
         /// Hello world example
         /// </summary>
         /// Request : GET http://localhost:4444/
-        /// <param name="request">The HttpListenerRequest can contains parameters, such as QueryString parameters or objects contained in request.InputStream</param>
+        /// <param name="request">The HttpListenerRequest can contains parameters, such as 
+        /// QueryString parameters or objects contained in request.InputStream</param>
         /// <returns>An http response template emitting the status code 200</returns>
         [MyRestRoute("/", HttpRestMethod.GET,HttpResponseUtility.HttpResponseContentType.Html)]
-        public HttpResponseTemplate HomeRoute(HttpListenerRequest request) // Important : The method needs to be public in order to be retrieved by reflection !!!
+        public HttpResponseTemplate HomeRoute(HttpListenerRequest request) 
         {
+            // Important : The method needs to be public in order to be retrieved by reflection !!!
             string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
             return HttpResponseUtility.Ok(responseString);
         }
