@@ -3,15 +3,15 @@ A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily
 
 
 ## Test
-Open Assets/TestScene. Run the scene. Open the postman collection in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
+Open Assets/TestScene. Run the scene. Open the [postman collection file joined](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.postman_collection.json) in postman. You can run requests samples via Postman. For text/html content type responses you can also use your web-browser.
 
 ## Configure 
-Your HttpListener webserver is running under urls defined in the http-listener-config file.
+Your HttpListener webserver is running under urls defined in the [http-listener-config file](https://github.com/sachaamm/unity-http-listener/blob/main/http-listener-config.json).
 ```json 
 {"urlBases":["http://localhost:4444","http://127.0.0.1:4444"]}
 ```
 
-So by default, the webserver is running in localhost on the port 4444. You can use this files to setup your production environment.
+So by default, the webserver is running in localhost on the port 4444. You can use this files to setup your development/production environment as you wish.
 
 ## Code Example 
 ```cs
