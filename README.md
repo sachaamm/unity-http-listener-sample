@@ -8,6 +8,7 @@ Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb5
 - [x] URL not found handling
 - [x] Routes injection via reflection
 - [x] Error handling via Exception StackTrace 
+- [x] Async routes
 - [ ] SSL-Certificate configuration ( TODO )
 
 ## Test
