@@ -3,9 +3,8 @@ A custom HTTP REST webserver middleware for Unity ( without .NET ). Build easily
 Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb54b2cacae4b81abea455b10/raw/e582fdbabda477eaf691b6a962cfb246274cad50/UnityHttpListener.cs)
 
 ## Features 
-- [x] REST API ( GET, POST, PUT, DELETE )
+- [x] REST API ( GET, POST, PUT, DELETE ) AND/OR  Html Webserver
 - [x] 3 Responses content types : text/plain, text/html, application/json
-- [x] Html Webserver
 - [x] URL not found handling
 - [x] Routes injection via reflection
 - [x] Error handling via Exception StackTrace 
