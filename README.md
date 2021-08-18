@@ -25,7 +25,7 @@ Your HttpListener webserver is running under urls defined in the [http-listener-
 So by default, the webserver is running in localhost on the port 4444. You can use this files to setup your development/production environment as you wish.
 
 ## Import in any Unity version
-You can easily import the project as a package in any Unity version with [UnityHttpListener package file](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.unitypackage) provided in the repository.
+You can easily import the project as a package in any Unity version with [UnityHttpListener package file](https://github.com/sachaamm/unity-http-listener/blob/main/UnityHttpListener.unitypackage) provided in the repository. You will need to copy also the [http-listener-config file](https://github.com/sachaamm/unity-http-listener/blob/main/http-listener-config.json). in the Assets parent folder ( at the root of your project )
 
 ## the Hello-World Controller Example 
 ```cs
