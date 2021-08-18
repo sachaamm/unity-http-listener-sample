@@ -85,7 +85,7 @@ namespace UnityCustomHttpListener.Demo.Controller
             {
                 ageValue = int.Parse(ageValuesFromQueryString[0]); // We expect to get only one value in "name" from the query string
                 nameValue = nameValuesFromQueryString[0];
-                p = persons.FirstOrDefault(p => p.Age == ageValue && p.Name == nameValue);
+                p = persons.FirstOrDefault(pp => pp.Age == ageValue && pp.Name == nameValue);
             }
             
             if (p != null)
