@@ -9,7 +9,7 @@ Based on an [amimaro gist](https://gist.githubusercontent.com/amimaro/10e879ccb5
 - [x] Routes injection via reflection
 - [x] Error handling via Exception StackTrace 
 - [x] Sync & Async routes
-- [ ] SSL-Certificate configuration ( TODO )
+- [x] SSL-Certificate configuration ( Check https://stackoverflow.com/questions/11403333/httplistener-with-https-support )
 
 ## Test
  - 1. Open Assets/TestScene. 
