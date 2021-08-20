@@ -1,5 +1,6 @@
 using System;
 using System.Net.Http;
+using UnityCustomHttpListener.Scripts.Client;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,9 +8,7 @@ namespace UnityCustomHttpListener.Demo
 {
     public class HelloWorldButton : MonoBehaviour
     {
-
-        static readonly HttpClient client = new HttpClient();
-
+        
         [SerializeField] private InputField _inputField;
         
         // https://docs.microsoft.com/en-us/dotnet/api/system.net.http.httpclient?view=net-5.0
@@ -17,7 +16,7 @@ namespace UnityCustomHttpListener.Demo
         {
             try	
             {
-                HttpResponseMessage response = await client.GetAsync(_inputField.text);
+                HttpResponseMessage response = await UnityHttpClient.Client.GetAsync(_inputField.text);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 // Above three lines can be replaced with new helper method below
