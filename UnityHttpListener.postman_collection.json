@@ -68,24 +68,20 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22&name=Bob%20O%27Neill",
+					"raw": "http://localhost:4444/getOneParameterInQueryStringExample/?name=Bob",
 					"protocol": "http",
 					"host": [
 						"localhost"
 					],
 					"port": "4444",
 					"path": [
-						"getPersonWithAgeAndNameInQueryParams",
+						"getOneParameterInQueryStringExample",
 						""
 					],
 					"query": [
 						{
-							"key": "age",
-							"value": "22"
-						},
-						{
 							"key": "name",
-							"value": "Bob%20O%27Neill"
+							"value": "Bob"
 						}
 					]
 				}
@@ -166,7 +162,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22&name=Bob%20O%27Neill",
+					"raw": "http://localhost:4444/getPersonWithAgeAndNameInQueryParams/?age=22+5&name=Bob%20O%27Neill",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -179,7 +175,7 @@
 					"query": [
 						{
 							"key": "age",
-							"value": "22"
+							"value": "22+5"
 						},
 						{
 							"key": "name",
@@ -240,7 +236,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"Name\": \"Luis Alamo\",\n    \"Age\": 15\n}",
+					"raw": "{\n    \"Name\": \"Alexandre Jordan\",\n    \"Age\": 30\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -256,6 +252,26 @@
 					"port": "4444",
 					"path": [
 						"addPersonAsync",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get GameObjectsCount via REST",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4444/gameObjectsCount/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"gameObjectsCount",
 						""
 					]
 				}
